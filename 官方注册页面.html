@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <style>
+        a {
+            color: rgba(156, 48, 73, 0.252);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <table width="500" align="right" > -->
+    <!-- <table width="500" align="light" > -->
+    <!-- <table width="500" align="center" > -->
+    <table align="center">
+        <tr>
+            <td>
+                <h4>青春不长在，抓紧谈恋爱</h4>
+            </td>
+        </tr>
+
+        <tr>
+            <td>性别：</td>
+            <td>
+                <!-- 在单选按钮中必须有相同的属性值  name="" -->
+                <label for="man">男</label>
+                <input type="radio" id="man" name="sex">
+                <label for="woman">女</label>
+                <input type="radio" id="woman" name="sex">
+            </td>
+        </tr>
+
+        <tr>
+            <td>生日：</td>
+            <td>
+                <select value="--请选择年--">
+
+                    <option>--请选择年--</option>
+                    <option>2021</option>
+                    <option>2022</option>
+                    <option>2023</option>
+                    <option>2024</option>
+                </select>
+                <select value="--请选择月--">
+                    <option>--请选择月--</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                <select value="--请选择日--">
+                    <option>--请选择日--</option>
+                    <option>11</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="add">所在地区：</label></td>
+            <td>
+                <input type="text" value="地址" id="add">
+            </td>
+        </tr>
+
+        <tr>
+            <td>婚姻状况：</td>
+            <td>
+                <input type="radio" id="yihun" name="hun">
+                <label for="yihun">已婚</label>
+
+                <input type="radio" id="weihun" name="hun">
+                <label for="weihun">未婚</label>
+
+                <input type="radio" id="lihun" name="hun">
+                <label for="lihun">离婚</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="xueli">学历:</label></td>
+            <td>
+
+                <input type="text" value="清华大学" id="xueli">
+            </td>
+        </tr>
+
+        <tr>
+            <td>喜欢的类型：</td>
+            <td>
+                <input type="radio" id="wumei">
+                <label for="wumei">妩媚的</label>
+
+                <input type="radio" id="keai">
+                <label for="keai">可爱的</label>
+
+                <input type="radio" id="xiaoxianrou">
+                <label for="xiaoxianrou">小鲜肉</label>
+
+                <input type="radio" id="laolarou">
+                <label for="laolarou">老腊肉</label>
+
+                <input type="radio" id="douxihuan">
+                <label for="douxihuan">都喜欢</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="type">自我介绍：</label></td>
+            <td>
+                <textarea>自我介绍
+            
+                </textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><input type="submit" value="免费注册"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <input type="checkbox" id="argee" checked="checked">
+                <label for="argee">我同意注册条款和会员加入标准</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <a href="https://qwerty.kaiyi.cool/" target="_self">我是会员，立即登录</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <h3>我承诺</h3>
+                <ul>
+                    <li>年满18岁，单身</li>
+                    <li>抱着严肃的态度</li>
+                    <li>真诚寻找另一半</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <!-- <form>
+    性别：&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    <label for="man" >男</label>
+    <input type="radio" id="man">
+    <label for="woman" >女</label>
+    <input type="radio" id="woman">
+    <br />
+    生日：&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    <select value="--请选择年--">
+        <option>2021</option>
+        <option>2022</option>
+        <option>2023</option>
+        <option>2024</option>
+
+    </select>
+    <select value="--请选择月--">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+    </select>
+    <select value="--请选择日--">
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+    </select>
+    <br />
+    <label for="add">所在地区：</label>&#160;&#160;&#160;
+    <input type="text" value="地址" id="add">
+    <br />
+    婚姻状况：&#160;&#160;
+    <input type="radio" id="yihun">
+    <label for="yihun">已婚</label>
+
+    <input type="radio" id="weihun">
+    <label for="weihun">未婚</label>
+
+    <input type="radio" id="lihun">
+    <label for="lihun">离婚</label>
+    <br />
+
+    <label for="xueli">学历</label>
+    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    <input type="text" value="清华大学" id="xueli">
+    <br />
+
+    喜欢的类型：
+    <input type="radio" id="wumei">
+    <label for="wumei">妩媚的</label>
+    
+    <input type="radio" id="keai">
+    <label for="keai">可爱的</label>
+
+    <input type="radio" id="xiaoxianrou">
+    <label for="xiaoxianrou">小鲜肉</label>
+
+    <input type="radio" id="laolarou">
+    <label for="laolarou">老腊肉</label>
+
+    <input type="radio" id="douxihuan">
+    <label for="douxihuan">都喜欢</label>
+    <br />
+
+    <label for="type">自我介绍：</label>
+    &#160;&#160;&#160;
+    <textarea>自我介绍
+
+    </textarea>
+    <br />
+
+    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    &#160;&#160;&#160;&#160;&#160;&#160;&#160;<input type="submit" value="免费注册">
+    <br />
+
+    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    &#160;&#160;&#160;&#160;&#160;
+    <input type="checkbox" id="argee">
+    <label for="argee">我同意注册条款和会员加入标准</label>
+    <br />
+
+    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    &#160;&#160;&#160;&#160;&#160;
+    <a href="https://qwerty.kaiyi.cool/" target="_self">我是会员，立即登录</a>
+
+
+    <h3>我承诺</h3>
+    <ul>
+        <li>年满18岁，单身</li>
+        <li>抱着严肃的态度</li>
+        <li>真诚寻找另一半</li>
+    </ul>
+
+    </form> -->
+</body>
+
+</html>
